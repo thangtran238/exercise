@@ -15,8 +15,10 @@
 }
 .logo-media {
   width:50px;
-  padding-left:40px;
+  margin: 0 50px;
+  transition: box-shadow 0.25s;
 }
-.logo-media{
+.logo-media:hover{
   cursor: pointer;
+  box-shadow: 0 1px 1px 1px rgba(100, 100, 100, 0.2)
 }

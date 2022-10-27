@@ -1,0 +1,82 @@
+.menu {
+  background-color: black;
+  height: 50px;
+  padding-left: 120px;
+}
+ul.root {
+  display: flex;
+  height: 100%;
+  line-height: 50px;
+  list-style-type: none;
+  position: relative;
+}
+ul.root > li {
+  transition: opcatity 0.25s, visibility 0.25s;
+  list-style-type: none;
+}
+ul.root > li:hover ul.child {
+  opacity: 1;
+  visibility: visible;
+}
+ul.root > li > a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 0 1.2rem;
+}
+ul.root > li > a:hover {
+  background-color: royalblue;  
+  display: block;
+  
+}
+ul.child {
+  background-color: blanchedalmond;
+  opacity: 0;
+  visibility: hidden;
+  border-left:1px solid black;
+  border-bottom:1px solid black;
+
+  
+}
+.child h4 {
+  font-size: 20px;
+}
+.child li {
+  border-top: 1px solid black;
+  position: relative;
+  transition: background-color 0.5s;
+}
+
+.child li > a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding-left: 10px;
+  position: relative;
+}
+.child li:hover ul.f1 {
+  opacity: 1;
+  visibility: visible;
+}
+.child li>a:hover {
+  background-color:royalblue;
+}
+ul.f1 {
+  background-color: blanchedalmond;
+  position: absolute;
+  top:0;
+  left:100%;
+  width: 100%;
+  list-style-type: none;
+  border-left: 1px solid black;
+  opacity: 0;
+  visibility: hidden;
+  transition: opcatity 0.25s, visibility 0.25s;
+}
+
+ul.f1 > li >a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
