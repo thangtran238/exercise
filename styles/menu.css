@@ -1,4 +1,5 @@
 .menu {
+  padding: 5px 10px;
   background-color: black;
   height: 50px;
   padding-left: 150px;
@@ -11,8 +12,9 @@ ul.root {
   position: relative;
 }
 ul.root > li {
-  transition: opcatity 0.25s, visibility 0.25s;
+  transition: opcatity 0.25s, visibility 0.25s,background-color 0.25s;
   list-style-type: none;
+  border-radius: 40px;
 }
 ul.root > li:hover ul.child {
   opacity: 1;
@@ -25,27 +27,31 @@ ul.root > li > a {
   color: white;
   padding: 0 1.2rem;
 }
-ul.root > li > a:hover {
+ul.root > li:hover {
   background-color: royalblue;  
-  display: block;
   
 }
 ul.child {
-  background-color: blanchedalmond;
+  border:none;
+  padding-left:10px;
+  margin-top: 10px;
   opacity: 0;
   visibility: hidden;
-  box-shadow: 0 2px 4px 3px rgba(100, 100, 100, 0.2)
-
-  
 }
 .child h4 {
   font-size: 20px;
-  box-shadow: 0 2px 4px 3px rgba(100, 100, 100, 0.2);
+  box-shadow: 2px 2px 4px 3px rgba(100, 100, 100, 0.2);
+  padding: 0 20px;
+  background-color: #a7e1f6;
+  border-radius: 50px;
 }
 .child li {
+  border-radius: 50px;
   box-shadow: 0 2px 4px 3px rgba(100, 100, 100, 0.2);
   position: relative;
-  transition: background-color 0.5s;
+  transition: background-color 0.25s;
+  background-color: #85a2e1;
+  margin: 5px 0;
 }
 
 .child li > a {
@@ -59,17 +65,16 @@ ul.child {
   opacity: 1;
   visibility: visible;
 }
-.child li>a:hover {
+.child li:hover {
   background-color:royalblue;
 }
 ul.f1 {
-  background-color: blanchedalmond;
+  border: none;
   position: absolute;
   top:0;
-  left:100%;
+  left:105%;
   width: 100%;
-  list-style-type: none;
-  box-shadow: 0 2px 4px 3px rgba(100, 100, 100, 0.2);
+  list-style-type: none;  
   transition: opcatity 0.25s, visibility 0.25s;
   opacity: 0;
   visibility: hidden;

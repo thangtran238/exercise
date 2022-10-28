@@ -1,7 +1,11 @@
 .category h4{
+  margin-top: 20px;
   padding: 20px 0;
-  border-bottom: 1px solid black;
+  box-shadow: 0 0 8px 0 rgba(100, 100, 100, 0.8);
   font-size: 30px;
+  border-radius: 50px;
+  padding: 20px 20px;
+  background-color: #a1a1f4
 }
 ul.sub-cate {
   list-style-type: none;
@@ -10,8 +14,13 @@ ul.sub-cate > li {
   padding: 0 20px;
   display: flex;
   line-height: 50px;
-  border-bottom: 1px solid black;
+  box-shadow: 0 2px 8px 0 rgba(100, 100, 100, 0.8);
   position: relative;
+  background-color: #c3a2f5;
+  border: none;
+  border-radius: 50px;
+  margin: 10px 0;
+  transition: background-color 0.25s;
 }
 ul.sub-cate > li:hover {
   background-color: orangered;
@@ -26,28 +35,46 @@ ul.sub-cate > li > a{
   text-decoration: none;
   color: royalblue; 
   font-size:20px;
+  padding: 0 auto;
 }
 .cate-child {
+  padding: 0 20px;
+  border-radius: 20px;
+  border: none;
   box-shadow: 0 2px 4px 2px rgba(100, 100, 100, 0.2);
   position: absolute;
-  left: 100%;
+  top: 0;
+  left: 102%;
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  background-color: #fff;
+  background-color: #f1f2f1;
 }
 .cate-child h5 {
-  padding-left: 20px;
+  margin-top: 20px;
+  background-color: #a1a1f4;
+  border-radius: 50px;
+  padding: 15px;
   box-shadow: 0 2px 4px 2px rgba(100, 100, 100, 0.2);
   font-size: 30px;
+  padding-right: 20px;
 }
 .cate-child >li {
   box-shadow: 0 2px 4px 2px rgba(100, 100, 200, 0.2);
   list-style-type: none;
+  background-color: #c2a1f4;
+  border: none;
+  margin: 20px 0;
+  border-radius: 50px;
+  transition: background-color 0.25s, box-shadow 0.15s;
 }
 .cate-child >li:hover {
   background-color: orangered;
   cursor: pointer;
+  box-shadow: 0 1px 2px 3px rgba(100, 100, 100, 0.4);
+}
+.cate-child >li:active {
+  box-shadow: none;
 }
 .cate-child >li >a {
   text-decoration: none;
