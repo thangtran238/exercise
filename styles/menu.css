@@ -21,6 +21,8 @@ ul.root > li:hover ul.child {
   visibility: visible;
 }
 ul.root > li > a {
+  padding: 10px 0;
+  margin: 0 10px;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
@@ -56,7 +58,6 @@ ul.child {
   background-color: #85a2e1;
   margin: 5px 0;
 }
-
 .child li > a {
   text-decoration: none;
   color: black;
@@ -82,7 +83,6 @@ ul.f1 {
   opacity: 0;
   visibility: hidden;
 }
-
 ul.f1 > li >a {
   text-decoration: none;
   color: black;

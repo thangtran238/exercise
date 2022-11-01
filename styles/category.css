@@ -30,7 +30,6 @@ ul.sub-cate > li:hover .cate-child {
   opacity:1 ;
   visibility: visible;
 }
-
 ul.sub-cate > li > a{
   text-decoration: none;
   color: royalblue; 
